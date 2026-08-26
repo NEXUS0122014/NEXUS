@@ -1,0 +1,1187 @@
+/* =========================================================
+   NEXUS CORPORATION
+   TERMINAL v1.0
+========================================================= */
+
+/* =========================================================
+   GOOGLE FONTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500;600;700&display=swap');
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root{
+
+    --bg:#141414;
+    --panel:#1B1B1B;
+    --line:#343434;
+
+    --purple:#7B4DFF;
+
+    --white:#F5F5F5;
+    --grey:#A7A7A7;
+
+    --radius:18px;
+
+    --transition:.25s ease;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    width:100%;
+    height:100%;
+
+}
+
+body{
+
+    width:100%;
+    height:100%;
+
+    background:var(--bg);
+
+    color:var(--white);
+
+    overflow:hidden;
+
+    font-family:'Inter',sans-serif;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+
+/* =========================================================
+   APP
+========================================================= */
+
+#app{
+
+    width:100vw;
+    height:100vh;
+
+    position:relative;
+
+}
+
+
+/* =========================================================
+   PANTALLAS
+========================================================= */
+
+.screen{
+
+    width:100%;
+    height:100%;
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    background:var(--bg);
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+
+/* =========================================================
+   TIPOGRAFÍA
+========================================================= */
+
+h1,
+h2{
+
+    font-family:'Orbitron',sans-serif;
+
+    letter-spacing:.08em;
+
+    font-weight:600;
+
+}
+
+button{
+
+    font-family:'Orbitron',sans-serif;
+
+}
+
+p{
+
+    line-height:1.6;
+
+}
+
+
+/* =========================================================
+   IMÁGENES
+========================================================= */
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+
+/* =========================================================
+   BOTÓN BASE
+========================================================= */
+
+.terminalButton{
+
+    width:100%;
+
+    max-width:320px;
+
+    height:54px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--purple);
+
+    color:white;
+
+    font-size:16px;
+
+    letter-spacing:.08em;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.terminalButton:active{
+
+    transform:scale(.98);
+
+}
+ /* =========================================================
+   LOADING
+========================================================= */
+
+.loadingContainer{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+#loadingLogo{
+
+    width:140px;
+
+    opacity:0;
+
+    animation:fadeLogo 1.5s forwards;
+
+}
+
+
+/* =========================================================
+   BOOT
+========================================================= */
+
+.bootContainer{
+
+    width:100%;
+
+    max-width:420px;
+
+    padding:32px;
+
+}
+
+.bootTitle{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:28px;
+
+    color:var(--white);
+
+    text-align:center;
+
+    letter-spacing:.10em;
+
+    margin-bottom:10px;
+
+}
+
+.bootSubtitle{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:14px;
+
+    color:var(--purple);
+
+    text-align:center;
+
+    letter-spacing:.20em;
+
+    margin-bottom:40px;
+
+}
+
+#bootLog{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    color:var(--grey);
+
+    line-height:1.7;
+
+    white-space:pre-wrap;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.introContainer{
+
+    width:100%;
+
+    max-width:420px;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:32px;
+
+}
+
+.introText{
+
+    width:100%;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    color:var(--white);
+
+    text-align:left;
+
+    margin-bottom:48px;
+
+}
+
+.introContainer .terminalButton{
+
+    margin-top:auto;
+
+    margin-bottom:40px;
+
+}
+/* =========================================================
+   TERMINAL
+========================================================= */
+
+.terminalContainer{
+
+    width:100%;
+    height:100%;
+
+    max-width:430px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:24px;
+
+}
+
+
+/* =========================================================
+   CABECERA
+========================================================= */
+
+.terminalHeader{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:24px;
+
+}
+
+#terminalLogo{
+
+    width:82px;
+
+    margin-bottom:16px;
+
+}
+
+#terminalCompany{
+
+    font-size:22px;
+
+    color:var(--white);
+
+    text-align:center;
+
+    margin-bottom:6px;
+
+}
+
+#terminalProtocol{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:12px;
+
+    color:var(--purple);
+
+    letter-spacing:.18em;
+
+}
+
+
+/* =========================================================
+   BARRA MISIÓN
+========================================================= */
+
+.missionBar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-top:1px solid var(--line);
+
+    border-bottom:1px solid var(--line);
+
+    padding:14px 0;
+
+    margin-bottom:30px;
+
+}
+
+#missionNumber{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:16px;
+
+    color:var(--white);
+
+}
+
+#missionStatus{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:13px;
+
+    color:var(--purple);
+
+    text-align:right;
+
+}
+
+
+/* =========================================================
+   CONTENIDO
+========================================================= */
+
+.terminalMain{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* =========================================================
+   ARIA
+========================================================= */
+
+#ariaTitle{
+
+    font-size:14px;
+
+    color:var(--purple);
+
+    margin-bottom:24px;
+
+}
+
+#ariaMessage{
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    color:var(--white);
+
+    margin-bottom:30px;
+
+    min-height:120px;
+
+}
+body.has-image #ariaMessage{
+
+    min-height:0;
+
+    margin-bottom:12px;
+
+}
+
+/* =========================================================
+   IMAGEN
+========================================================= */
+
+#imageContainer{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+
+}
+
+#missionImage{
+
+    width:100%;
+
+    border-radius:16px;
+
+    border:1px solid var(--line);
+
+    display:none;
+
+}
+
+
+/* =========================================================
+   BOTÓN
+========================================================= */
+
+#actionButton{
+
+    margin-top:auto;
+
+}
+
+
+/* =========================================================
+   EFECTO FADE
+========================================================= */
+
+.terminalContainer{
+
+    animation:fadeScreen .35s ease;
+
+}
+/* =========================================================
+   PANTALLA FINAL
+========================================================= */
+
+.finalContainer{
+
+    width:100%;
+    height:100%;
+
+    max-width:430px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:32px;
+
+    text-align:center;
+
+}
+
+#finalLogo{
+
+    width:110px;
+
+    margin-bottom:36px;
+
+}
+
+.finalTitle{
+
+    font-size:30px;
+
+    color:var(--white);
+
+    margin-bottom:28px;
+
+}
+
+#finalMessage{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:var(--white);
+
+}
+
+
+/* =========================================================
+   FADE LAYER
+========================================================= */
+
+#fadeLayer{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#000;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:opacity .35s ease;
+
+    z-index:999;
+
+}
+
+#fadeLayer.active{
+
+    opacity:1;
+
+}
+
+
+/* =========================================================
+   ANIMACIONES
+========================================================= */
+
+@keyframes fadeLogo{
+
+    from{
+
+        opacity:0;
+        transform:scale(.94);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes fadeScreen{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width:430px){
+
+    .terminalContainer{
+
+        padding:20px;
+
+    }
+
+    #terminalLogo{
+
+        width:74px;
+
+    }
+
+    #terminalCompany{
+
+        font-size:20px;
+
+    }
+
+    #terminalProtocol{
+
+        font-size:11px;
+
+    }
+
+    .missionBar{
+
+        padding:12px 0;
+
+        margin-bottom:24px;
+
+    }
+
+    #missionNumber{
+
+        font-size:15px;
+
+    }
+
+    #missionStatus{
+
+        font-size:12px;
+
+    }
+
+    #ariaTitle{
+
+        font-size:13px;
+
+        margin-bottom:18px;
+
+    }
+
+    #ariaMessage{
+
+        font-size:18px;
+
+        line-height:1.6;
+
+        min-height:110px;
+
+        margin-bottom:24px;
+
+    }
+
+    #missionImage{
+
+        border-radius:14px;
+
+    }
+
+    .terminalButton{
+
+        height:52px;
+
+        font-size:15px;
+
+    }
+
+    .bootTitle{
+
+        font-size:24px;
+
+    }
+
+    .bootSubtitle{
+
+        font-size:13px;
+
+    }
+
+    .introText{
+
+        font-size:18px;
+
+    }
+
+    .finalTitle{
+
+        font-size:26px;
+
+    }
+
+    #finalMessage{
+
+        font-size:18px;
+
+    }
+
+}
+
+
+/* =========================================================
+   iPHONE SAFE AREA
+========================================================= */
+
+@supports (padding:max(0px)){
+
+    .terminalContainer{
+
+        padding-top:max(24px, env(safe-area-inset-top));
+
+        padding-bottom:max(24px, env(safe-area-inset-bottom));
+
+    }
+
+}
+
+/* =========================================================
+   NEXUS — AJUSTE S001
+   Imagen completa + botón visible
+   ========================================================= */
+
+.terminalContainer {
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.terminalMain {
+    min-height: 0;
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   TEXTO
+   --------------------------------------------------------- */
+
+#ariaMessage {
+    min-height: 0;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGEN
+   --------------------------------------------------------- */
+
+#imageContainer {
+    flex-shrink: 0;
+    height: 190px;
+    margin-bottom: 16px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#missionImage {
+    display: block;
+
+    width: 100%;
+    height: 190px;
+
+    max-height: 190px;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* ---------------------------------------------------------
+   BOTÓN
+   --------------------------------------------------------- */
+
+#actionButton {
+    flex-shrink: 0;
+
+    height: 52px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* =========================================================
+   S001B — PANTALLA DE IMAGEN
+   ========================================================= */
+
+#terminalScreen.imageOnly {
+
+    overflow:hidden;
+
+}
+
+
+/* Ocultamos los elementos de texto de la misión */
+
+#terminalScreen.imageOnly #missionStatus,
+#terminalScreen.imageOnly #ariaMessage {
+
+    display:none;
+
+}
+
+
+/* La imagen ocupa el espacio disponible */
+
+#terminalScreen.imageOnly #imageContainer {
+
+    flex: 1 1 auto;
+
+    min-height: 0;
+
+    height: auto;
+
+    margin: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+
+}
+
+
+/* =========================================================
+   IMÁGENES DE EVIDENCIA — AJUSTE VERTICAL
+   ========================================================= */
+
+#terminalScreen.imageOnly #missionImage {
+
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+}
+
+
+/* El botón permanece abajo */
+
+#terminalScreen.imageOnly #actionButton {
+
+    flex-shrink:0;
+
+    margin-top:16px;
+    margin-bottom:20px;
+
+}
+/* =========================================================
+   IMÁGENES DE EVIDENCIA — ADAPTACIÓN AUTOMÁTICA
+   ========================================================= */
+
+#terminalScreen.imageOnly #missionImage {
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center;
+
+}
+
+
+/* ---------------------------------------------------------
+   IMAGEN VERTICAL
+   --------------------------------------------------------- */
+
+#terminalScreen.imageOnly #missionImage.imageVertical {
+
+    width: auto;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+
+/* ---------------------------------------------------------
+   IMAGEN HORIZONTAL
+   --------------------------------------------------------- */
+
+#terminalScreen.imageOnly #missionImage.imageHorizontal {
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+
+/* ---------------------------------------------------------
+   IMAGEN CUADRADA / SIN ORIENTACIÓN
+   --------------------------------------------------------- */
+
+#terminalScreen.imageOnly #missionImage:not(.imageVertical):not(.imageHorizontal) {
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+/* =========================================================
+   PANTALLAS DE IMAGEN — MODO EVIDENCIA
+   ========================================================= */
+
+#terminalScreen.imageOnly {
+    overflow: hidden;
+}
+
+
+/* Ocultar cabecera en la pantalla de imagen */
+
+#terminalScreen.imageOnly .terminalHeader,
+#terminalScreen.imageOnly .terminalTop,
+#terminalScreen.imageOnly #operationTitle,
+#terminalScreen.imageOnly #operationName,
+#terminalScreen.imageOnly #progressBar {
+    display: none !important;
+}
+
+
+/* Ocultar información narrativa */
+
+#terminalScreen.imageOnly #missionStatus,
+#terminalScreen.imageOnly #ariaMessage {
+    display: none !important;
+}
+
+
+/* La zona principal ocupa prácticamente toda la pantalla */
+
+#terminalScreen.imageOnly .terminalMain {
+    height: 100%;
+    min-height: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Zona exclusiva para la fotografía */
+
+#terminalScreen.imageOnly #imageContainer {
+    flex: 1 1 auto;
+
+    width: 100%;
+    min-height: 0;
+
+    margin: 0 0 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* La fotografía conserva siempre sus proporciones */
+
+#terminalScreen.imageOnly #missionImage {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* Verticales: aprovechan especialmente el alto */
+
+#terminalScreen.imageOnly #missionImage.imageVertical {
+    width: auto;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Horizontales: aprovechan el ancho */
+
+#terminalScreen.imageOnly #missionImage.imageHorizontal {
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Botón siempre visible */
+
+#terminalScreen.imageOnly #actionButton {
+    flex-shrink: 0;
+
+    height: 52px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* =========================================================
+   NEXUS — SUBPANTALLAS DE EVIDENCIA (SxxxB)
+   Todas las pantallas que muestran una fotografía de evidencia
+   utilizan el mismo espacio flexible, respetando la proporción.
+   ========================================================= */
+
+/* La subpantalla mantiene la cabecera y la información de misión.
+   Solo hacemos flexible la zona reservada a la fotografía. */
+
+#terminalScreen.imageOnly #imageContainer {
+    flex: 1 1 0;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    margin: 0 0 16px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#terminalScreen.imageOnly #missionImage {
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    border: none !important;
+    border-radius: 0;
+}
+
+/* Fotografías verticales: aprovechamos el alto disponible. */
+#terminalScreen.imageOnly #missionImage.imageVertical {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Fotografías horizontales: aprovechamos el ancho disponible. */
+#terminalScreen.imageOnly #missionImage.imageHorizontal {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Cuadradas o casi cuadradas: llenan el máximo posible sin deformarse. */
+#terminalScreen.imageOnly #missionImage:not(.imageVertical):not(.imageHorizontal) {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* El botón queda siempre visible debajo de la fotografía. */
+#terminalScreen.imageOnly #actionButton {
+    flex: 0 0 auto;
+    height: 52px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* =========================================================
+   SxxxB — mantener la estructura visual de la subpantalla
+   ========================================================= */
+
+/* La cabecera y la barra de misión siguen visibles, como en S001B. */
+#terminalScreen.imageOnly .terminalHeader {
+    display: flex !important;
+}
+
+#terminalScreen.imageOnly #missionStatus {
+    display: block !important;
+}
+
+/* La subpantalla no necesita el texto narrativo; deja ese espacio
+   disponible para ampliar la fotografía. */
+#terminalScreen.imageOnly #ariaMessage {
+    display: none !important;
+}
+
+/* Imágenes cuadradas/casi cuadradas: también se pueden ampliar. */
+#terminalScreen.imageOnly #missionImage:not(.imageVertical):not(.imageHorizontal) {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}

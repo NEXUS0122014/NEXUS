@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>NEXUS CORPORATION</title>
+
+    <meta
+        name="theme-color"
+        content="#141414">
+
+    <meta
+        name="apple-mobile-web-app-capable"
+        content="yes">
+
+    <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent">
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+<div id="app">
+<!-- ========================================================= -->
+<!-- LOADING -->
+<!-- ========================================================= -->
+
+<section id="loadingScreen" class="screen">
+
+    <div class="loadingContainer">
+
+        <img
+            id="loadingLogo"
+            src="img/logo_nexus.png"
+            alt="NEXUS CORPORATION">
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ========================================================= -->
+<!-- TERMINAL NEXUS -->
+<!-- ========================================================= -->
+
+<section
+    id="terminalScreen"
+    class="screen hidden">
+
+    <div class="terminalContainer">
+
+        <!-- ============================================== -->
+        <!-- CABECERA -->
+        <!-- ============================================== -->
+
+        <header class="terminalHeader">
+
+            <img
+                id="terminalLogo"
+                src="img/logo_nexus.png"
+                alt="NEXUS CORPORATION">
+
+            <h1 id="terminalCompany">
+
+                NEXUS CORPORATION
+
+            </h1>
+
+            <div id="terminalProtocol">
+
+                PROTOCOLO NEXUS-12
+
+            </div>
+
+        </header>
+
+
+        <!-- ============================================== -->
+        <!-- INFORMACIÓN MISIÓN -->
+        <!-- ============================================== -->
+
+        <section class="missionBar">
+
+            <div id="missionNumber">
+
+                MISIÓN 01
+
+            </div>
+
+            <div id="missionStatus">
+
+                TRANSMISIÓN ACTIVA
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================================== -->
+        <!-- TRANSMISIÓN -->
+        <!-- ============================================== -->
+
+        <main class="terminalMain">
+
+            <h2 id="ariaTitle">
+
+                TRANSMISIÓN DE ARIA
+
+            </h2>
+
+            <div id="ariaMessage">
+
+            </div>
+
+
+            <!-- ========================================== -->
+            <!-- IMAGEN -->
+            <!-- ========================================== -->
+
+            <div id="imageContainer">
+
+                <img
+                    id="missionImage"
+                    src=""
+                    alt="">
+
+            </div>
+
+
+            <!-- ========================================== -->
+            <!-- BOTÓN -->
+            <!-- ========================================== -->
+
+            <button
+                id="actionButton"
+                class="terminalButton">
+
+                CONTINUAR
+
+            </button>
+
+        </main>
+
+    </div>
+
+</section>
+<!-- ========================================================= -->
+<!-- PANTALLA FINAL -->
+<!-- ========================================================= -->
+
+<section
+    id="finalScreen"
+    class="screen hidden">
+
+    <div class="finalContainer">
+
+        <img
+            id="finalLogo"
+            src="img/logo_nexus.png"
+            alt="NEXUS CORPORATION">
+
+        <h1 class="finalTitle">
+
+            MISIÓN COMPLETADA
+
+        </h1>
+
+        <div id="finalMessage">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- AUDIO -->
+<!-- ========================================================= -->
+
+<audio
+    id="systemAudio"
+    preload="auto">
+</audio>
+
+
+
+<!-- ========================================================= -->
+<!-- CAPA FADE -->
+<!-- ========================================================= -->
+
+<div id="fadeLayer"></div>
+
+
+
+</div>
+<!-- FIN APP -->
+
+
+
+<!-- ========================================================= -->
+<!-- SCRIPTS -->
+<!-- ========================================================= -->
+
+<script src="js/pantallas.js"></script>
+<script src="js/terminal.js"></script>
+
+</body>
+</html>
