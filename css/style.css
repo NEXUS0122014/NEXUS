@@ -1222,3 +1222,9 @@ body.has-image #ariaMessage{
         padding:16px 24px;
     }
 }
+.final-push {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 20px auto 25px auto;
+}

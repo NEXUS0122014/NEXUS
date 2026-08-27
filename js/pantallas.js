@@ -698,22 +698,20 @@ FINAL:{
     estado:"MISIÓN COMPLETADA",
 
     texto:`
+<img src="img/push.png" class="final-push" alt="PUSH">
 
-
-Feliz cumpleaños Eric! 
-Esta caja es para ti.
+FELIZ CUMPLEAÑOS ERIC!
+ESTA CAJA ES PARA TI.
 `,
 
     imagen:null,
 
     boton:null,
 
-    audio: "aria_fin.m4a",
+    audio:"aria_fin.m4a",
 
     efecto:null,
 
     next:null
-} 
+}
 };
-
-    
