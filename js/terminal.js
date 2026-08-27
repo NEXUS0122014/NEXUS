@@ -427,35 +427,26 @@ function efectoFlash() {
 function mostrarFinal() {
 
     if (loadingScreen) {
-
         loadingScreen.classList.add("hidden");
-
     }
 
     if (terminalScreen) {
-
         terminalScreen.classList.add("hidden");
-
     }
 
     if (finalScreen) {
-
         finalScreen.classList.remove("hidden");
-
     }
 
+    const pantallaFinal = pantallas["FINAL"];
 
-    const pantallaFinal =
-        pantallas["FINAL"];
+    if (pantallaFinal && pantallaFinal.audio) {
 
-    if (
-        pantallaFinal &&
-        pantallaFinal.audio
-    ) {
+        reproducirAudio(pantallaFinal.audio);
 
-        reproducirAudio(
-            pantallaFinal.audio
-        );
+        document.addEventListener("click", () => {
+            reproducirAudio(pantallaFinal.audio);
+        }, { once: true });
 
     }
 
