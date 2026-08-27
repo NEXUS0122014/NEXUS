@@ -675,7 +675,8 @@ S023:{
     estado:"ACCESO AUTORIZADO",
 
     texto:`
-LUZ VEFRDE.
+LUZ VERDE.
+
 Mostrad la tarjeta de acceso al personal de la base.
 Acceso concedido.
 `,
