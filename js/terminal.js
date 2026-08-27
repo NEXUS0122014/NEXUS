@@ -440,18 +440,24 @@ function mostrarFinal() {
 
     const pantallaFinal = pantallas["FINAL"];
     const finalMessage =
-    document.getElementById("finalMessage");
+        document.getElementById("finalMessage");
 
-if (finalMessage && pantallaFinal) {
+    if (finalMessage && pantallaFinal) {
 
-    finalMessage.innerHTML =
-        pantallaFinal.texto
-            ? pantallaFinal.texto.replace(/\n/g, "<br>")
-            : "";
+        finalMessage.innerHTML = `
+            <img
+                src="img/push.png"
+                class="final-push"
+                alt="PUSH">
 
-}
+            <div class="finalBirthday">
+                ${pantallaFinal.texto
+                    ? pantallaFinal.texto.replace(/\n/g, "<br>")
+                    : ""}
+            </div>
+        `;
+    }
 
-   
     if (pantallaFinal && pantallaFinal.audio) {
 
         reproducirAudio(pantallaFinal.audio);

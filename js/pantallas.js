@@ -697,9 +697,7 @@ FINAL:{
 
     estado:"MISIÓN COMPLETADA",
 
-    texto:`
-<img src="img/push.png" class="final-push" alt="PUSH">
-
+   texto:`
 FELIZ CUMPLEAÑOS ERIC!
 ESTA CAJA ES PARA TI.
 `,
