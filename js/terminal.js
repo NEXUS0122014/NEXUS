@@ -50,9 +50,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
 
+    const parametros = new URLSearchParams(window.location.search);
+    const pantallaQR = parametros.get("screen");
+
+    if (pantallaQR === "FINAL") {
+
+        mostrarPantalla("FINAL");
+
+    } else {
+
         mostrarPantalla("S001");
 
-    }, 3000);
+    }
+
+}, 3000);
 
 });
 
