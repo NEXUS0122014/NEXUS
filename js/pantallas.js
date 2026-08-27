@@ -682,7 +682,7 @@ Acceso concedido.
 
     imagen:null,
 
-    boton:null,
+    boton:"ACCESO CONCEDIDO",
 
     audio:null,
 
