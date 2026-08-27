@@ -698,11 +698,10 @@ FINAL:{
     estado:"MISIÓN COMPLETADA",
 
     texto:`
-Operación completada.
 
-Gracias, agentes.
 
-Feliz cumpleaños Eric! Esta caja es para ti.
+Feliz cumpleaños Eric! 
+Esta caja es para ti.
 `,
 
     imagen:null,
