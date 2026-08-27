@@ -688,7 +688,7 @@ Acceso concedido.
 
     efecto:null,
 
-    next:"null"
+    next:null,
 
 },
 
