@@ -7,7 +7,7 @@
    GOOGLE FONTS
 ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Orbitron:wght@500;600;700&display=swap');
 
 
 /* =========================================================
@@ -60,7 +60,7 @@ body{
 
     overflow:hidden;
 
-    font-family:'Inter',sans-serif;
+   font-family:'Chakra Petch',sans-serif;
 
     -webkit-font-smoothing:antialiased;
 
@@ -468,7 +468,9 @@ img{
 
 #ariaMessage{
 
-    font-size:20px;
+    font-family:'Orbitron',sans-serif;
+
+    font-size:18px;
 
     line-height:1.7;
 
