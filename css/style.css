@@ -1434,18 +1434,20 @@ body.has-image #ariaMessage{
 
 @media (max-width:600px){
 
-    #finalScreen{
+   #finalScreen{
 
-        align-items:flex-start;
+    height:100dvh;
 
-        overflow:hidden;
+    align-items:flex-start;
 
-    }
+    overflow:hidden;
+
+}
 
     .finalContainer{
 
         width:100%;
-        height:100%;
+       height:100dvh;
 
         max-width:430px;
 
