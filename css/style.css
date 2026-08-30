@@ -349,40 +349,42 @@ img{
 .terminalHeader{
 
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
     margin-bottom:24px;
 
 }
 
+
 #terminalLogo{
 
-    width:82px;
+    width:86px;
+    height:auto;
 
-    margin-bottom:16px;
+    margin-bottom:10px;
 
 }
 
 #terminalCompany{
 
-    font-size:22px;
+    font-size:20px;
+    line-height:1.15;
 
     color:var(--white);
 
     text-align:center;
 
-    margin-bottom:6px;
+    margin-bottom:5px;
 
 }
+
 
 #terminalProtocol{
 
     font-family:'Orbitron',sans-serif;
 
-    font-size:12px;
+    font-size:11px;
+    line-height:1.2;
 
     color:var(--purple);
 
@@ -400,16 +402,14 @@ img{
     display:flex;
 
     justify-content:space-between;
-
     align-items:center;
 
     border-top:1px solid var(--line);
-
     border-bottom:1px solid var(--line);
 
-    padding:14px 0;
+    padding:12px 0;
 
-    margin-bottom:30px;
+    margin-bottom:20px;
 
 }
 
@@ -508,9 +508,9 @@ body.has-image #ariaMessage{
 
     width:100%;
 
-    border-radius:16px;
+    border-radius:0;
 
-    border:1px solid var(--line);
+    border:none;
 
     display:none;
 
@@ -673,9 +673,10 @@ body.has-image #ariaMessage{
 
     }
 
-    #terminalLogo{
+   #terminalLogo{
 
-        width:74px;
+    width:78px;
+
 
     }
 
@@ -731,12 +732,7 @@ body.has-image #ariaMessage{
 
     }
 
-    #missionImage{
-
-        border-radius:14px;
-
-    }
-
+   
     .terminalButton{
 
         height:52px;
