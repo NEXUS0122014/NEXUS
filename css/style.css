@@ -1313,3 +1313,117 @@ body.has-image #ariaMessage{
     }
 
 }
+/* ==================================================
+   NEXUS — POSICIÓN FIJA DEL BOTÓN EN MÓVIL
+   ================================================== */
+
+@media (max-width:600px){
+
+    /* El terminal será la referencia del botón */
+    .terminalContainer{
+
+        position:relative;
+
+    }
+
+
+    /* Reservamos espacio inferior para el botón */
+    .terminalMain{
+
+        padding-bottom:76px;
+
+    }
+
+
+    /* BOTÓN EN POSICIÓN FIJA DENTRO DEL TERMINAL */
+
+    #actionButton{
+
+        position:absolute;
+
+        left:20px;
+        right:20px;
+
+        bottom:24px;
+
+        width:calc(100% - 40px);
+
+        height:52px;
+
+        margin:0;
+
+        flex:none;
+
+        z-index:10;
+
+    }
+
+
+    /* ==================================================
+       PANTALLAS CON IMAGEN
+       ================================================== */
+
+    #terminalScreen.imageOnly .terminalMain{
+
+        padding-bottom:76px;
+
+        min-height:0;
+
+    }
+
+
+    #terminalScreen.imageOnly #imageContainer{
+
+        flex:1 1 auto;
+
+        min-height:0;
+
+        height:auto;
+
+        margin:0;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        overflow:hidden;
+
+    }
+
+
+    /* Las imágenes verticales aprovechan el espacio */
+    
+    #terminalScreen.imageOnly #missionImage.imageVertical{
+
+        width:auto;
+
+        height:100%;
+
+        max-width:100%;
+
+        max-height:100%;
+
+        object-fit:contain;
+
+    }
+
+
+    /* Las horizontales aprovechan el ancho */
+
+    #terminalScreen.imageOnly #missionImage.imageHorizontal{
+
+        width:100%;
+
+        height:auto;
+
+        max-width:100%;
+
+        max-height:100%;
+
+        object-fit:contain;
+
+    }
+
+}
