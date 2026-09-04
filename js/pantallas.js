@@ -695,12 +695,9 @@ Acceso concedido.
 
 FINAL:{
 
-    estado:"MISIÓN COMPLETADA",
+    estado:"FELICIDADES ERIC!!",
 
-   texto:`
-FELIZ CUMPLEAÑOS ERIC!
-ESTA CAJA ES PARA TI.
-`,
+   texto:null,
 
     imagen:null,
 
