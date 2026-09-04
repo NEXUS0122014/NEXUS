@@ -1585,3 +1585,13 @@ body.has-image #ariaMessage{
         line-height: 1.4 !important;
     }
 }
+/* ===== REDUCIR LOGO PUSH - PRUEBA FINAL ===== */
+@media (max-width: 600px) {
+    #finalMessage img.final-push {
+        width: 150px !important;
+        max-width: 150px !important;
+        height: auto !important;
+        display: block !important;
+        margin: 10px auto 20px auto !important;
+    }
+}
