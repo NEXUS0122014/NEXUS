@@ -1530,4 +1530,58 @@ body.has-image #ariaMessage{
 
     }
 
+ }
+ /* ===== AJUSTE FINAL PANTALLA FINAL ===== */
+@media (max-width: 600px){
+
+    #finalScreen{
+        height: 100dvh !important;
+        overflow: hidden !important;
+    }
+
+    .finalContainer{
+        width: 100% !important;
+        max-width: 430px !important;
+        height: 100dvh !important;
+        box-sizing: border-box !important;
+
+        padding: 28px 20px 20px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        text-align: center !important;
+    }
+
+    #finalLogo{
+        width: 115px !important;
+        height: auto !important;
+        margin: 0 0 14px 0 !important;
+    }
+
+    .finalTitle{
+        font-size: 32px !important;
+        line-height: 1.05 !important;
+        margin: 0 0 12px 0 !important;
+    }
+
+    #finalMessage{
+        width: 100% !important;
+        font-size: 17px !important;
+        line-height: 1.35 !important;
+    }
+
+    .final-push{
+        width: 190px !important;
+        max-width: 55vw !important;
+        height: auto !important;
+        margin: 8px auto 18px auto !important;
+    }
+
+    .finalBirthday{
+        width: 100% !important;
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+    }
 }
